@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gnaniaditya Mandali | Data Engineer Portfolio</title>
+    <title>Gnaniaditya Mandali | Data Systems Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
     <style>
         :root { --accent: #10b981; --bg: #020617; }
         body { font-family: 'Space Grotesk', sans-serif; background-color: var(--bg); overflow-x: hidden; color: #94a3b8; }
         .tech-gradient { background: radial-gradient(circle at 50% 50%, #1e293b 0%, #020617 100%); }
-        .glow-box:hover { box-shadow: 0 0 30px rgba(16, 185, 129, 0.2); border-color: var(--accent); transform: translateY(-5px); transition: all 0.3s ease; }
+        .glow-box:hover { box-shadow: 0 0 40px rgba(16, 185, 129, 0.25); border-color: var(--accent); transform: translateY(-8px); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
         .mono { font-family: 'JetBrains Mono', monospace; }
-        .nav-blur { backdrop-filter: blur(12px); background: rgba(2, 6, 23, 0.7); }
+        .nav-blur { backdrop-filter: blur(12px); background: rgba(2, 6, 23, 0.8); }
+        .project-img { filter: grayscale(20%) brightness(80%); transition: all 0.5s ease; }
+        .project-img:hover { filter: grayscale(0%) brightness(100%); transform: scale(1.05); }
     </style>
 </head>
 <body>
@@ -24,24 +26,103 @@
     <nav class="fixed w-full z-50 border-b border-white/5 nav-blur">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <span class="text-xl font-bold text-white tracking-tighter italic">G.ADITYA</span>
-            <div class="hidden md:flex space-x-8 text-[10px] font-bold uppercase tracking-widest">
-                <a href="#about" class="hover:text-emerald-400 transition">About</a>
-                <a href="#experience" class="hover:text-emerald-400 transition">Experience</a>
-                <a href="#projects" class="hover:text-emerald-400 transition">Systems</a>
+            <div class="hidden md:flex space-x-8 text-[10px] font-bold uppercase tracking-widest text-slate-400">
+                <a href="#about" class="hover:text-emerald-400 transition">Overview</a>
+                <a href="#projects" class="hover:text-emerald-400 transition">Dashboards</a>
+                <a href="#experience" class="hover:text-emerald-400 transition">History</a>
             </div>
-            <a href="mailto:gmandali@gmu.edu" class="px-4 py-2 border border-emerald-500/50 text-emerald-400 rounded-full text-[10px] hover:bg-emerald-500 hover:text-black transition duration-500 tracking-widest font-bold">CONTACT</a>
+            <a href="mailto:gmandali@gmu.edu" class="px-5 py-2 border-2 border-emerald-500/50 text-emerald-400 rounded-full text-[10px] hover:bg-emerald-500 hover:text-black transition duration-500 font-black tracking-widest">GET HIRED</a>
         </div>
     </nav>
 
-    <section id="about" class="min-h-screen flex flex-col justify-center px-6 max-w-6xl mx-auto pt-20">
-        <div class="mono text-emerald-500 text-xs mb-4 bg-emerald-500/10 w-fit px-3 py-1 rounded-full border border-emerald-500/20 uppercase tracking-widest">Data Engineer // Cloud Specialist</div>
-        <h1 class="text-6xl md:text-8xl font-bold text-white leading-none mb-6 tracking-tighter">Gnaniaditya <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-500">Mandali.</span></h1>
+    <section id="about" class="min-h-screen flex flex-col justify-center px-6 max-w-6xl mx-auto pt-24">
+        <div class="mono text-emerald-500 text-xs mb-6 bg-emerald-500/10 w-fit px-4 py-1.5 rounded-full border border-emerald-500/20 uppercase tracking-widest">Data Engineer // Power BI Specialist</div>
+        <h1 class="text-6xl md:text-8xl font-bold text-white leading-none mb-8 tracking-tighter">Visualizing <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-500 italic">Impact.</span></h1>
         
-        <div class="grid md:grid-cols-2 gap-12 items-start mt-8">
-            <p class="text-lg leading-relaxed">
-                Software Engineer specializing in building modern cloud-based data pipelines. 
-                With 3 years of experience at <span class="text-white">Wipro</span>, I transform complex datasets using advanced SQL and Python. 
-                Currently an M.S. Candidate at <span class="text-white">George Mason University</span>.
+        <div class="grid md:grid-cols-2 gap-16 items-start">
+            <p class="text-xl leading-relaxed text-slate-300">
+                Based in <span class="text-white">Fairfax, VA</span>, I architect data systems that tell stories. 
+                With 3 years at <span class="text-white font-bold">Wipro</span>, I specialize in the "Retail Tech" stack—optimizing SQL pipelines and building high-performance dashboards for global retail giants like Primark.
             </p>
-            <div class="bg-white/5 border border-white/10 p-6 rounded-2xl mono text-xs space-y-3">
-                <p><span class="text-emerald-500">Born:</span>
+            <div class="bg-emerald-500/5 border border-emerald-500/10 p-8 rounded-3xl mono text-xs space-y-4">
+                <p><span class="text-emerald-500 font-bold">DOB:</span> 16 Feb 2000</p>
+                <p><span class="text-emerald-500 font-bold">GMU:</span> M.S. Information Systems (2025)</p>
+                <p><span class="text-emerald-500 font-bold">TECH:</span> SQL, Python, Azure, Power BI</p>
+                <p><span class="text-emerald-500 font-bold">LOC:</span> Fairfax, VA (Open to Relocation)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-32 px-6 max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-white mb-4 tracking-tight italic">// SYSTEM_VISUALS</h2>
+        <p class="text-slate-500 mb-16 mono text-sm tracking-widest uppercase">Click to view system architecture</p>
+        
+        <div class="grid md:grid-cols-2 gap-10">
+            <div class="group relative overflow-hidden rounded-3xl bg-slate-900 border border-white/10 glow-box">
+                <div class="h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1551288049-bbbda546697a?auto=format&fit=crop&q=80&w=800" alt="Retail Dashboard" class="w-full h-full object-cover project-img">
+                </div>
+                <div class="p-8">
+                    <h4 class="text-[10px] font-bold text-emerald-500 mb-2 tracking-widest uppercase">Wipro / Retail Tech</h4>
+                    <h3 class="text-2xl font-bold text-white mb-4 italic">Primark Operations Dashboard</h3>
+                    <p class="text-sm text-slate-400 mb-6">Built complex Power BI visualizations for Primark to track supply chain metrics and store performance using optimized SQL backends.</p>
+                    <div class="flex gap-2">
+                        <span class="bg-white/5 px-3 py-1 rounded-full text-[10px] border border-white/10">Power BI</span>
+                        <span class="bg-white/5 px-3 py-1 rounded-full text-[10px] border border-white/10">SQL Optimization</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-3xl bg-slate-900 border border-white/10 glow-box">
+                <div class="h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1543286386-2e659306cd6c?auto=format&fit=crop&q=80&w=800" alt="Data Analytics" class="w-full h-full object-cover project-img">
+                </div>
+                <div class="p-8">
+                    <h4 class="text-[10px] font-bold text-blue-500 mb-2 tracking-widest uppercase">Analytics Systems</h4>
+                    <h3 class="text-2xl font-bold text-white mb-4 italic">Predictive Maintenance Hub</h3>
+                    <p class="text-sm text-slate-400 mb-6">Simulated real-time maintenance alerts and fleet health KPIs using BigQuery pipelines and interactive reporting.</p>
+                    <div class="flex gap-2">
+                        <span class="bg-white/5 px-3 py-1 rounded-full text-[10px] border border-white/10">BigQuery</span>
+                        <span class="bg-white/5 px-3 py-1 rounded-full text-[10px] border border-white/10">KPI Automation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-32 px-6 max-w-6xl mx-auto border-t border-white/5">
+        <div class="grid md:grid-cols-12 gap-12">
+            <div class="md:col-span-4">
+                <h2 class="text-3xl font-bold text-white tracking-tighter sticky top-32 italic uppercase underline decoration-emerald-500 underline-offset-8">Career Timeline</h2>
+            </div>
+            <div class="md:col-span-8 space-y-20">
+                <div class="relative pl-10 border-l-2 border-emerald-500/20">
+                    <div class="absolute w-4 h-4 bg-emerald-500 rounded-full -left-[9px] top-0 shadow-[0_0_15px_rgba(16,185,129,1)]"></div>
+                    <p class="mono text-xs text-emerald-500 mb-2">DEC 2021 — JUL 2023</p>
+                    <h4 class="text-2xl font-bold text-white">Project Engineer • Wipro</h4>
+                    <p class="text-slate-400 mt-4 leading-relaxed">
+                        Led data transformation for retail accounts (Primark). Wrote complex CTEs and Window Functions to map multi-source data into Star Schema models. Improved reliability by implementing null/duplicate gatekeeper alerts.
+                    </p>
+                </div>
+                <div class="relative pl-10 border-l-2 border-white/10">
+                    <div class="absolute w-4 h-4 bg-slate-700 rounded-full -left-[9px] top-0"></div>
+                    <p class="mono text-xs text-slate-500 mb-2">2023 — 2025</p>
+                    <h4 class="text-2xl font-bold text-white italic">M.S. Candidate • George Mason University</h4>
+                    <p class="text-slate-500 mt-4 leading-relaxed">
+                        Deepening expertise in Cloud Computing (Azure), Data Analytics, and Machine Learning. Building end-to-end AI agents and cloud-native data stacks.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 text-center border-t border-white/5 bg-slate-950/30">
+        <div class="max-w-6xl mx-auto px-6">
+            <h3 class="text-2xl font-bold text-white mb-8">Ready to engineer your data?</h3>
+            <a href="mailto:gmandali@gmu.edu" class="text-emerald-400 text-3xl font-light hover:text-white transition duration-500 italic underline decoration-emerald-500 underline-offset-8">gmandali@gmu.edu</a>
+            <p class="mt-16 mono text-[10px] tracking-[0.3em] text-slate-600 uppercase">Gnaniaditya Mandali // © 2026 // Fairfax, Virginia</p>
+        </div>
+    </footer>
+
+</body>
+</html>
