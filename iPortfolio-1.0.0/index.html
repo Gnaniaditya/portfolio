@@ -1,250 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Gnaniaditya Mandali - Portfolio</title>
-  <meta content="Data Analyst & Developer portfolio for Gnaniaditya Mandali" name="description">
-  <meta content="Gnaniaditya Mandali, Data Analyst, Developer, Python, SQL, Data Visualization" name="keywords">
-
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/css/main.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gnaniaditya Mandali | Data Engineer & Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .gradient-text { background: linear-gradient(to right, #10b981, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
 </head>
+<body class="bg-slate-900 text-slate-200 leading-relaxed">
 
-<body class="index-page">
-
-  <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-    <div class="profile-img">
-      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
-    </div>
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <h1 class="sitename">Gnaniaditya Mandali</h1>
-    </a>
-    <div class="social-links text-center">
-      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      <a href="#" class="github"><i class="bi bi-github"></i></a>
-      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-    </div>
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
-      </ul>
+    <nav class="fixed w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-xl font-bold gradient-text">GM.</span>
+            <div class="space-x-6 text-sm font-medium">
+                <a href="#about" class="hover:text-emerald-400 transition">About</a>
+                <a href="#experience" class="hover:text-emerald-400 transition">Experience</a>
+                <a href="#skills" class="hover:text-emerald-400 transition">Skills</a>
+                <a href="mailto:gnaniaditya0@gmail.com" class="bg-emerald-500 text-slate-900 px-4 py-2 rounded-lg hover:bg-emerald-400 transition">Hire Me</a>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Gnaniaditya Mandali</h2>
-        <p><span class="typed" data-typed-items="Data Analyst, Developer, Data Visualization Expert, Insight Creator"></span></p>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>A passionate Data Analyst & Developer with expertise in Python, SQL, and data visualization, creating impactful solutions through data-driven insights.</p>
-      </div>
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="Gnaniaditya Mandali">
-          </div>
-          <div class="col-lg-8 content">
-            <h2>Data Analyst & Developer</h2>
-            <p class="fst-italic py-3">I’m a data enthusiast focused on transforming raw data into actionable insights that drive impactful business decisions.</p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>gnaniaditya@example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                </ul>
-              </div>
-            </div>
-            <p class="py-3">
-              I have 3 years of professional experience as a Data Analyst at Wipro, where I developed and deployed scalable data solutions. Previously, I worked as a Data Analyst Intern at IBM for a year, honing my analytical and visualization skills.
+    <header class="pt-32 pb-20 px-6">
+        <div class="max-w-5xl mx-auto">
+            <p class="text-emerald-400 font-mono mb-4">Hi, my name is</p>
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-4">Gnaniaditya Mandali.</h1>
+            <h2 class="text-3xl md:text-5xl font-semibold text-slate-400 mb-6">I build scalable data pipelines.</h2>
+            <p class="max-w-xl text-lg text-slate-400 mb-8">
+                Software Engineer with 3 years of experience specializing in SQL, Python, and ETL optimization. 
+                Currently pursuing an M.S. in Information Systems at George Mason University.
             </p>
-          </div>
+            <div class="flex gap-4">
+                <a href="#experience" class="border border-emerald-500 text-emerald-500 px-6 py-3 rounded-lg hover:bg-emerald-500/10 transition">View Experience</a>
+                <a href="https://linkedin.com/in/gnaniaditya" target="_blank" class="bg-slate-800 px-6 py-3 rounded-lg hover:bg-slate-700 transition">LinkedIn</a>
+            </div>
         </div>
-      </div>
+    </header>
+
+    <section id="experience" class="py-20 bg-slate-800/30">
+        <div class="max-w-5xl mx-auto px-6">
+            <h3 class="text-3xl font-bold text-white mb-12 border-l-4 border-emerald-500 pl-4">Work Experience</h3>
+            
+            <div class="space-y-12">
+                <div class="relative pl-8 border-l border-slate-700">
+                    <div class="absolute w-4 h-4 bg-emerald-500 rounded-full -left-[8.5px] top-1"></div>
+                    <h4 class="text-xl font-bold text-white">Project Engineer (Data/Reporting)</h4>
+                    <p class="text-emerald-400 font-medium">Wipro Technologies • Dec 2021 — Jul 2023</p>
+                    <ul class="mt-4 space-y-2 text-slate-400 list-disc list-inside">
+                        <li>Developed and optimized advanced SQL scripts to enhance data transformation processes.</li>
+                        <li>Implemented data-quality validation checks, improving pipeline reliability and accuracy.</li>
+                        <li>Collaborated with stakeholders to define reporting structures and created foundational data models.</li>
+                    </ul>
+                </div>
+
+                <div class="relative pl-8 border-l border-slate-700">
+                    <div class="absolute w-4 h-4 bg-slate-600 rounded-full -left-[8.5px] top-1"></div>
+                    <h4 class="text-xl font-bold text-white">AI/ML Intern</h4>
+                    <p class="text-emerald-400 font-medium">IBM SmartBridge • May 2018 — Dec 2019</p>
+                    <ul class="mt-4 space-y-2 text-slate-400 list-disc list-inside">
+                        <li>Used Python (Pandas, NumPy) to preprocess large-scale datasets for pipeline integration.</li>
+                        <li>Conducted model evaluations and reported metrics for new system features.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>Detailed overview of my experience and education.</p>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Summary</h3>
-            <div class="resume-item pb-0">
-              <h4>Gnaniaditya Mandali</h4>
-              <p><em>A passionate Data Analyst & Developer with expertise in Python, SQL, and data visualization, creating impactful solutions through data-driven insights.</em></p>
-              <ul>
-                <li>New York, USA</li>
-                <li>+123 456 7890</li>
-                <li>gnaniaditya@example.com</li>
-              </ul>
+    <section id="skills" class="py-20 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <h3 class="text-3xl font-bold text-white mb-12">Tech Stack</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="p-6 bg-slate-800 rounded-xl border border-slate-700 hover:border-emerald-500 transition">
+                    <p class="text-white font-bold">SQL</p>
+                    <p class="text-xs text-slate-500 mt-2">Complex Joins & Window Functions</p>
+                </div>
+                <div class="p-6 bg-slate-800 rounded-xl border border-slate-700 hover:border-emerald-500 transition">
+                    <p class="text-white font-bold">Python</p>
+                    <p class="text-xs text-slate-500 mt-2">Pandas, NumPy, Scripting</p>
+                </div>
+                <div class="p-6 bg-slate-800 rounded-xl border border-slate-700 hover:border-emerald-500 transition">
+                    <p class="text-white font-bold">Azure</p>
+                    <p class="text-xs text-slate-500 mt-2">Cloud Fundamentals (AZ-900)</p>
+                </div>
+                <div class="p-6 bg-slate-800 rounded-xl border border-slate-700 hover:border-emerald-500 transition">
+                    <p class="text-white font-bold">BI Tools</p>
+                    <p class="text-xs text-slate-500 mt-2">Tableau, Power BI, Excel</p>
+                </div>
             </div>
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Data Analytics</h4>
-              <h5>2015 - 2017</h5>
-              <p><em>XYZ University, USA</em></p>
-              <p>Focused on data analysis, statistics, and data-driven decision-making.</p>
-            </div>
-            <div class="resume-item">
-              <h4>Bachelor of Computer Science</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>ABC College, India</em></p>
-              <p>Focused on computer programming, data structures, and algorithms.</p>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Data Analyst</h4>
-              <h5>2019 - 2022</h5>
-              <p><em>Wipro, India</em></p>
-              <ul>
-                <li>Developed data pipelines and dashboards to optimize business operations.</li>
-                <li>Collaborated with cross-functional teams to deliver data-driven insights.</li>
-                <li>Leveraged Python, SQL, and data visualization tools to drive key decisions.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Data Analyst Intern</h4>
-              <h5>2018 - 2019</h5>
-              <p><em>IBM, India</em></p>
-              <ul>
-                <li>Assisted in developing data models and visualizations.</li>
-                <li>Worked with senior analysts to interpret data trends and patterns.</li>
-                <li>Enhanced data collection and analysis methods to boost project outcomes.</li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Let’s connect! I’m open to data-driven opportunities and collaborations.</p>
-      </div>
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
-          <div class="col-lg-5">
-            <div class="info-wrap">
-              <div class="info-item d-flex">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>New York, USA</p>
-                </div>
-              </div>
-              <div class="info-item d-flex">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Call Me</h3>
-                  <p>+123 456 7890</p>
-                </div>
-              </div>
-              <div class="info-item d-flex">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email</h3>
-                  <p>gnaniaditya@example.com</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form">
-              <div class="row gy-4">
-                <div class="col-md-6">
-                  <label>Your Name</label>
-                  <input type="text" name="name" class="form-control" required>
-                </div>
-                <div class="col-md-6">
-                  <label>Your Email</label>
-                  <input type="email" class="form-control" name="email" required>
-                </div>
-                <div class="col-md-12">
-                  <label>Subject</label>
-                  <input type="text" class="form-control" name="subject" required>
-                </div>
-                <div class="col-md-12">
-                  <label>Message</label>
-                  <textarea class="form-control" name="message" rows="10" required></textarea>
-                </div>
-                <div class="col-md-12 text-center">
-                  <button type="submit">Send Message</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+    <footer class="py-10 border-t border-slate-800 text-center text-slate-500 text-sm">
+        <p>© 2026 Gnaniaditya Mandali. Built for impact.</p>
+        <p class="mt-2">Fairfax, VA | (571) 244-0126 | gnaniaditya0@gmail.com</p>
+    </footer>
 
-  </main>
-
-  <footer id="footer" class="footer position-relative light-background">
-    <div class="container">
-      <div class="copyright text-center">
-        <p>© <span>2025</span> <strong class="px-1 sitename">Gnaniaditya Mandali</strong> All Rights Reserved</p>
-      </div>
-    </div>
-  </footer>
-
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  <div id="preloader"></div>
-
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/js/main.js"></script>
 </body>
 </html>
