@@ -3,132 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gnaniaditya | Data Systems Engineer</title>
+    <title>Gnaniaditya Mandali | Data Systems Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
     <style>
         :root { --accent: #10b981; --bg: #020617; }
-        body { font-family: 'Space Grotesk', sans-serif; background-color: var(--bg); overflow-x: hidden; }
+        body { font-family: 'Space Grotesk', sans-serif; background-color: var(--bg); overflow-x: hidden; color: #94a3b8; }
         .tech-gradient { background: radial-gradient(circle at 50% 50%, #1e293b 0%, #020617 100%); }
         .glow-box:hover { box-shadow: 0 0 30px rgba(16, 185, 129, 0.2); border-color: var(--accent); transform: translateY(-5px); transition: all 0.3s ease; }
-        .animate-pulse-slow { animation: pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
-        @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.1; } }
         .mono { font-family: 'JetBrains Mono', monospace; }
+        .nav-blur { backdrop-filter: blur(12px); background: rgba(2, 6, 23, 0.7); }
     </style>
 </head>
-<body class="text-slate-300">
+<body>
 
     <div class="fixed inset-0 z-[-1] tech-gradient">
         <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"></div>
-        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-emerald-500/10 rounded-full blur-[120px] animate-pulse-slow"></div>
-        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-500/10 rounded-full blur-[120px] animate-pulse-slow"></div>
     </div>
 
-    <nav class="fixed w-full z-50 border-b border-white/5 bg-slate-950/50 backdrop-blur-xl">
+    <nav class="fixed w-full z-50 border-b border-white/5 nav-blur">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="text-2xl font-bold text-white tracking-tighter italic">G.ADITYA</span>
-            <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest">
+            <span class="text-xl font-bold text-white tracking-tighter italic">G.ADITYA</span>
+            <div class="hidden md:flex space-x-8 text-[10px] font-bold uppercase tracking-widest">
+                <a href="#about" class="hover:text-emerald-400 transition">About</a>
                 <a href="#experience" class="hover:text-emerald-400 transition">Experience</a>
                 <a href="#projects" class="hover:text-emerald-400 transition">Projects</a>
-                <a href="#skills" class="hover:text-emerald-400 transition">Stack</a>
             </div>
-            <a href="mailto:gnaniaditya0@gmail.com" class="px-5 py-2 border border-emerald-500/50 text-emerald-400 rounded-full text-xs hover:bg-emerald-500 hover:text-black transition duration-500">GET IN TOUCH</a>
+            <a href="mailto:gnaniaditya0@gmail.com" class="px-4 py-2 border border-emerald-500/50 text-emerald-400 rounded-full text-[10px] hover:bg-emerald-500 hover:text-black transition duration-500">HIRE ME</a>
         </div>
     </nav>
 
-    <section class="min-h-screen flex flex-col justify-center px-6 max-w-6xl mx-auto pt-20">
-        <div class="mono text-emerald-500 text-sm mb-4 bg-emerald-500/10 w-fit px-3 py-1 rounded-full border border-emerald-500/20">SOFTWARE ENGINEER // DATA SPECIALIST</div>
-        <h1 class="text-6xl md:text-8xl font-bold text-white leading-none mb-6">Optimizing <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-500">Data Flow.</span></h1>
-        <p class="max-w-2xl text-lg text-slate-400 mb-10 leading-relaxed">
-            I’m Gnaniaditya Mandali. With 3 years of experience at <span class="text-white">Wipro</span>, I specialize in building 
-            high-reliability ETL pipelines and SQL transformation engines. Currently engineering AI solutions at 
-            George Mason University.
-        </p>
-        <div class="flex gap-6">
-            <a href="#projects" class="bg-white text-black px-8 py-4 rounded-full font-bold hover:bg-emerald-400 transition">VIEW SYSTEMS</a>
-            <a href="https://linkedin.com/in/gnaniaditya" target="_blank" class="flex items-center gap-2 text-white hover:text-emerald-400 transition">
-                <span class="underline underline-offset-8">LINKEDIN</span>
-            </a>
-        </div>
-    </section>
-
-    <section id="experience" class="py-32 px-6 max-w-6xl mx-auto">
-        <h2 class="text-4xl font-bold text-white mb-20 tracking-tight">Experience <span class="text-emerald-500">History</span></h2>
-        <div class="space-y-24">
-            <div class="grid md:grid-cols-12 gap-8 relative">
-                <div class="md:col-span-4">
-                    <p class="mono text-emerald-500">2021 — 2023</p>
-                    <h3 class="text-2xl font-bold text-white">Wipro Technologies</h3>
-                    <p class="text-slate-500">Project Engineer</p>
-                </div>
-                <div class="md:col-span-8 bg-white/5 p-8 rounded-2xl border border-white/10 glow-box">
-                    <ul class="space-y-4 text-slate-400">
-                        <li class="flex gap-3"><span class="text-emerald-500 mt-1">▹</span> Optimized advanced SQL scripts to enhance data transformation for large-scale ETL operations.</li>
-                        <li class="flex gap-3"><span class="text-emerald-500 mt-1">▹</span> Implemented data-quality validation and documented data lineage to ensure pipeline reliability.</li>
-                        <li class="flex gap-3"><span class="text-emerald-500 mt-1">▹</span> Architected foundational data models to support enterprise-level reporting.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="py-32 px-6 bg-white/[0.02]">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-4xl font-bold text-white mb-16 tracking-tight italic">// FEATURED_SYSTEMS</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="group relative overflow-hidden rounded-3xl bg-slate-900 border border-white/10 p-10 glow-box">
-                    <h4 class="text-xs font-bold text-emerald-500 mb-4 tracking-widest uppercase">AI & Automation</h4>
-                    <h3 class="text-3xl font-bold text-white mb-4">Travel Concierge Agent</h3>
-                    <p class="text-slate-400 mb-8">An intelligent AI application automating complex travel itinerary generation using LLMs and Python.</p>
-                    <div class="flex gap-3">
-                        <span class="mono text-[10px] bg-white/5 px-3 py-1 rounded-full border border-white/10 italic">#Python</span>
-                        <span class="mono text-[10px] bg-white/5 px-3 py-1 rounded-full border border-white/10 italic">#LLM</span>
-                    </div>
-                </div>
-
-                <div class="group relative overflow-hidden rounded-3xl bg-slate-900 border border-white/10 p-10 glow-box">
-                    <h4 class="text-xs font-bold text-blue-500 mb-4 tracking-widest uppercase">Data Engineering</h4>
-                    <h3 class="text-3xl font-bold text-white mb-4">ML Pipeline Preprocessor</h3>
-                    <p class="text-slate-400 mb-8">Developed at IBM SmartBridge to handle large-scale datasets using statistical Python techniques.</p>
-                    <div class="flex gap-3">
-                        <span class="mono text-[10px] bg-white/5 px-3 py-1 rounded-full border border-white/10 italic">#NumPy</span>
-                        <span class="mono text-[10px] bg-white/5 px-3 py-1 rounded-full border border-white/10 italic">#Pandas</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="py-32 px-6 max-w-6xl mx-auto">
-        <div class="grid md:grid-cols-3 gap-12">
-            <div>
-                <h3 class="text-white font-bold mb-6 flex items-center gap-2"><span class="w-8 h-[1px] bg-emerald-500"></span> LANGUAGES</h3>
-                <div class="flex flex-wrap gap-2 text-xs mono">
-                    <span class="bg-white/5 px-4 py-2 rounded-lg border border-white/10">SQL (Window Functions)</span>
-                    <span class="bg-white/5 px-4 py-2 rounded-lg border border-white/10">Python (Pandas)</span>
-                </div>
-            </div>
-            <div>
-                <h3 class="text-white font-bold mb-6 flex items-center gap-2"><span class="w-8 h-[1px] bg-blue-500"></span> CLOUD & BI</h3>
-                <div class="flex flex-wrap gap-2 text-xs mono">
-                    <span class="bg-white/5 px-4 py-2 rounded-lg border border-white/10">Azure Fundamentals (AZ-900)</span>
-                    <span class="bg-white/5 px-4 py-2 rounded-lg border border-white/10">Tableau Desktop</span>
-                    <span class="bg-white/5 px-4 py-2 rounded-lg border border-white/10">Oracle Data Platform</span>
-                </div>
-            </div>
-            <div>
-                <h3 class="text-white font-bold mb-6 flex items-center gap-2"><span class="w-8 h-[1px] bg-white"></span> EDUCATION</h3>
-                <div class="text-xs mono space-y-2">
-                    <p class="text-white">M.S. Info Systems @ GMU</p>
-                    <p class="text-slate-500 italic">Expected May 2025</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="py-20 text-center border-t border-white/5">
-        <p class="mono text-[10px] tracking-widest text-slate-500 uppercase">Designed for Data Engineering Excellence • 2026</p>
-    </footer>
-
-</body>
-</html>
+    <section id="about" class="min-h-screen flex flex-col justify-center px-6 max-w-6xl mx-auto pt-20">
+        <div class="mono text-emerald-500 text-xs mb-4 bg-emerald-500/10 w-fit px-3 py-1 rounded-full border border-emerald-500/20 uppercase tracking-widest">Software Engineer // Data Specialist</div>
+        <h1 class="text-6xl md:text-8xl font-bold text-white leading-none mb-6">Gnaniaditya <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-500">Mandali.</span></h1>
+        
+        <div class="grid md
