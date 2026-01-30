@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gnaniaditya Mandali | Data Engineer & Software Engineer</title>
+    <title>Gnaniaditya Mandali | Data Engineer Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
         .gradient-text { background: linear-gradient(to right, #10b981, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glass-card { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px border rgba(255, 255, 255, 0.1); }
     </style>
 </head>
 <body class="bg-slate-900 text-slate-200 leading-relaxed">
@@ -16,87 +17,118 @@
     <nav class="fixed w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
         <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
             <span class="text-xl font-bold gradient-text">GM.</span>
-            <div class="space-x-6 text-sm font-medium">
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
                 <a href="#about" class="hover:text-emerald-400 transition">About</a>
                 <a href="#experience" class="hover:text-emerald-400 transition">Experience</a>
+                <a href="#projects" class="hover:text-emerald-400 transition">Projects</a>
                 <a href="#skills" class="hover:text-emerald-400 transition">Skills</a>
-                <a href="mailto:gnaniaditya0@gmail.com" class="bg-emerald-500 text-slate-900 px-4 py-2 rounded-lg hover:bg-emerald-400 transition">Hire Me</a>
             </div>
+            <a href="mailto:gnaniaditya0@gmail.com" class="bg-emerald-500 text-slate-900 px-5 py-2 rounded-full text-sm font-bold hover:bg-emerald-400 transition">Contact</a>
         </div>
     </nav>
 
-    <header class="pt-32 pb-20 px-6">
+    <header id="about" class="pt-40 pb-20 px-6">
         <div class="max-w-5xl mx-auto">
-            <p class="text-emerald-400 font-mono mb-4">Hi, my name is</p>
-            <h1 class="text-5xl md:text-7xl font-bold text-white mb-4">Gnaniaditya Mandali.</h1>
-            <h2 class="text-3xl md:text-5xl font-semibold text-slate-400 mb-6">I build scalable data pipelines.</h2>
-            <p class="max-w-xl text-lg text-slate-400 mb-8">
-                Software Engineer with 3 years of experience specializing in SQL, Python, and ETL optimization. 
-                Currently pursuing an M.S. in Information Systems at George Mason University.
+            <p class="text-emerald-400 font-mono mb-4">Software Engineer & Data Specialist</p>
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">Gnaniaditya Mandali</h1>
+            <p class="max-w-2xl text-xl text-slate-400 mb-8">
+                3+ years of experience in data transformation and optimization[cite: 4]. Specializing in 
+                <span class="text-white">SQL, Python, and Azure</span> to build high-reliability ETL pipelines[cite: 4, 31, 39]. 
+                M.S. in Information Systems candidate at George Mason University[cite: 24, 25].
             </p>
-            <div class="flex gap-4">
-                <a href="#experience" class="border border-emerald-500 text-emerald-500 px-6 py-3 rounded-lg hover:bg-emerald-500/10 transition">View Experience</a>
-                <a href="https://linkedin.com/in/gnaniaditya" target="_blank" class="bg-slate-800 px-6 py-3 rounded-lg hover:bg-slate-700 transition">LinkedIn</a>
+            <div class="flex flex-wrap gap-4">
+                <a href="#projects" class="bg-emerald-500 text-slate-900 px-8 py-3 rounded-lg font-bold hover:shadow-[0_0_20px_rgba(16,185,129,0.4)] transition">View Work</a>
+                <a href="https://linkedin.com/in/gnaniaditya" target="_blank" class="border border-slate-700 px-8 py-3 rounded-lg font-bold hover:bg-slate-800 transition">LinkedIn</a>
             </div>
         </div>
     </header>
 
-    <section id="experience" class="py-20 bg-slate-800/30">
+    <section id="experience" class="py-24 bg-slate-800/20">
         <div class="max-w-5xl mx-auto px-6">
-            <h3 class="text-3xl font-bold text-white mb-12 border-l-4 border-emerald-500 pl-4">Work Experience</h3>
-            
+            <h3 class="text-3xl font-bold text-white mb-16">Professional Experience</h3>
             <div class="space-y-12">
-                <div class="relative pl-8 border-l border-slate-700">
-                    <div class="absolute w-4 h-4 bg-emerald-500 rounded-full -left-[8.5px] top-1"></div>
-                    <h4 class="text-xl font-bold text-white">Project Engineer (Data/Reporting)</h4>
-                    <p class="text-emerald-400 font-medium">Wipro Technologies • Dec 2021 — Jul 2023</p>
-                    <ul class="mt-4 space-y-2 text-slate-400 list-disc list-inside">
-                        <li>Developed and optimized advanced SQL scripts to enhance data transformation processes.</li>
-                        <li>Implemented data-quality validation checks, improving pipeline reliability and accuracy.</li>
-                        <li>Collaborated with stakeholders to define reporting structures and created foundational data models.</li>
-                    </ul>
-                </div>
-
-                <div class="relative pl-8 border-l border-slate-700">
-                    <div class="absolute w-4 h-4 bg-slate-600 rounded-full -left-[8.5px] top-1"></div>
-                    <h4 class="text-xl font-bold text-white">AI/ML Intern</h4>
-                    <p class="text-emerald-400 font-medium">IBM SmartBridge • May 2018 — Dec 2019</p>
-                    <ul class="mt-4 space-y-2 text-slate-400 list-disc list-inside">
-                        <li>Used Python (Pandas, NumPy) to preprocess large-scale datasets for pipeline integration.</li>
-                        <li>Conducted model evaluations and reported metrics for new system features.</li>
-                    </ul>
+                <div class="flex flex-col md:flex-row gap-4 md:gap-12">
+                    <div class="md:w-1/4 text-slate-500 font-mono text-sm">DEC 2021 — JUL 2023</div>
+                    <div class="md:w-3/4">
+                        <h4 class="text-xl font-bold text-white">Project Engineer • Wipro Technologies</h4>
+                        <p class="text-emerald-400 text-sm mb-4">Bengaluru, India [cite: 9, 11]</p>
+                        <ul class="space-y-3 text-slate-400 list-disc list-outside ml-4">
+                            <li>Developed and optimized advanced SQL scripts to enhance ETL operations[cite: 12].</li>
+                            <li>Implemented data-quality validation and documented data lineage for pipeline accuracy[cite: 13].</li>
+                            <li>Created foundational data models and reporting structures for stakeholders[cite: 14].</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="py-20 px-6">
+    <section id="projects" class="py-24 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h3 class="text-3xl font-bold text-white mb-12">Featured Projects</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass-card p-8 rounded-2xl hover:translate-y-[-8px] transition duration-300 border border-slate-700/50">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="p-3 bg-emerald-500/10 rounded-lg text-emerald-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+                        </div>
+                    </div>
+                    <h4 class="text-2xl font-bold text-white mb-2">AI Travel Concierge Agent</h4>
+                    <p class="text-slate-400 mb-6">
+                        An intelligent AI-driven application that automates travel itinerary planning. 
+                        Leverages LLMs to provide personalized recommendations and automated scheduling.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 bg-slate-700 rounded text-xs font-mono text-emerald-400">Python</span>
+                        <span class="px-3 py-1 bg-slate-700 rounded text-xs font-mono text-emerald-400">LLM</span>
+                        <span class="px-3 py-1 bg-slate-700 rounded text-xs font-mono text-emerald-400">Streamlit</span>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl hover:translate-y-[-8px] transition duration-300 border border-slate-700/50">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="p-3 bg-blue-500/10 rounded-lg text-blue-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+                        </div>
+                    </div>
+                    <h4 class="text-2xl font-bold text-white mb-2">ETL Optimization Engine</h4>
+                    <p class="text-slate-400 mb-6">
+                        Optimized data transformation processes using advanced SQL and Python scripts[cite: 4]. 
+                        Reduced latency in data pipeline outputs and improved data reconciliation[cite: 13, 15].
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 bg-slate-700 rounded text-xs font-mono text-blue-400">SQL</span>
+                        <span class="px-3 py-1 bg-slate-700 rounded text-xs font-mono text-blue-400">Pandas</span>
+                        <span class="px-3 py-1 bg-slate-700 rounded text-xs font-mono text-blue-400">Azure</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 bg-slate-800/20 px-6">
         <div class="max-w-5xl mx-auto text-center">
-            <h3 class="text-3xl font-bold text-white mb-12">Tech Stack</h3>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <div class="p-6 bg-slate-800 rounded-xl border border-slate-700 hover:border-emerald-500 transition">
-                    <p class="text-white font-bold">SQL</p>
-                    <p class="text-xs text-slate-500 mt-2">Complex Joins & Window Functions</p>
-                </div>
-                <div class="p-6 bg-slate-800 rounded-xl border border-slate-700 hover:border-emerald-500 transition">
-                    <p class="text-white font-bold">Python</p>
-                    <p class="text-xs text-slate-500 mt-2">Pandas, NumPy, Scripting</p>
-                </div>
-                <div class="p-6 bg-slate-800 rounded-xl border border-slate-700 hover:border-emerald-500 transition">
-                    <p class="text-white font-bold">Azure</p>
-                    <p class="text-xs text-slate-500 mt-2">Cloud Fundamentals (AZ-900)</p>
-                </div>
-                <div class="p-6 bg-slate-800 rounded-xl border border-slate-700 hover:border-emerald-500 transition">
-                    <p class="text-white font-bold">BI Tools</p>
-                    <p class="text-xs text-slate-500 mt-2">Tableau, Power BI, Excel</p>
-                </div>
+            <h3 class="text-3xl font-bold text-white mb-16">Technical Expertise</h3>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="px-6 py-3 bg-slate-800 border border-slate-700 rounded-full text-white hover:border-emerald-500 transition cursor-default">SQL (Window Functions, CTEs)</span>
+                <span class="px-6 py-3 bg-slate-800 border border-slate-700 rounded-full text-white hover:border-emerald-500 transition cursor-default">Python (Pandas, NumPy)</span>
+                <span class="px-6 py-3 bg-slate-800 border border-slate-700 rounded-full text-white hover:border-emerald-500 transition cursor-default">Azure (AZ-900)</span>
+                <span class="px-6 py-3 bg-slate-800 border border-slate-700 rounded-full text-white hover:border-emerald-500 transition cursor-default">Tableau Desktop Specialist</span>
+                <span class="px-6 py-3 bg-slate-800 border border-slate-700 rounded-full text-white hover:border-emerald-500 transition cursor-default">Oracle Data Platform</span>
+                <span class="px-6 py-3 bg-slate-800 border border-slate-700 rounded-full text-white hover:border-emerald-500 transition cursor-default">Power BI</span>
             </div>
         </div>
     </section>
 
-    <footer class="py-10 border-t border-slate-800 text-center text-slate-500 text-sm">
-        <p>© 2026 Gnaniaditya Mandali. Built for impact.</p>
-        <p class="mt-2">Fairfax, VA | (571) 244-0126 | gnaniaditya0@gmail.com</p>
+    <footer class="py-12 border-t border-slate-800 text-center text-slate-500 text-sm">
+        <div class="max-w-5xl mx-auto px-6">
+            <p>© 2026 Gnaniaditya Mandali[cite: 1]. Developed for Modern Data Engineering Roles.</p>
+            <p class="mt-4 flex justify-center gap-6">
+                <a href="mailto:gnaniaditya0@gmail.com" class="hover:text-emerald-400 transition">Email</a>
+                <a href="https://linkedin.com/in/gnaniaditya" class="hover:text-emerald-400 transition">LinkedIn</a>
+                <a href="tel:5712440126" class="hover:text-emerald-400 transition">Call Me</a>
+            </p>
+        </div>
     </footer>
 
 </body>
